@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            text-transform: capitalize;
+        }
+
+        .container {
+            width: 50%;
+            border: 2px solid;
+            box-sizing: border-box;
+            border-radius: 10px 10px 10px 10px;
+            margin: 30px auto;
+        }
+
+        .block {
+            margin: 30px 50px;
+        }
+
+        .display {
+            width: 100%;
+            padding: 4px;
+            border: none;
+            margin-top: 4px;
+            outline: none;
+            border-bottom: 2px solid grey;
+        }
+
+        label {
+            font-weight: bolder;
+            font-size: large;
+        }
+
+        .button {
+            margin: 20px;
+            /* width: 100%; */
+        }
+
+        .sub {
+            width: 100%;
+            padding: 10px 0;
+            background-color:grey;
+            cursor: pointer;
+            transition-duration: 0.4s;
+        }
+
+        .sub:hover {
+            /* background-color: #4CAF50; Green */
+            background-color: white;
+        }
+        body{
+            background-image: url('https://static.vecteezy.com/system/resources/previews/001/843/337/non_2x/light-gray-background-with-random-forms-vector.jpg');
+        background-position: center;
+        background-size: cover;
+        }
+        .home{
+            font-size: x-large;
+            color: blueviolet;
+            font-weight: bolder;
+           
+        }
+        .home:hover{
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home">
+        <a href="landingpage.html" style=" text-decoration: none;"> home</a>
+    </div>
+    <div class="container">
+
+        <h1 style="text-align: center; border-bottom:2px solid ;">
+            form for demo class
+        </h1>
+        <form >
+
+            <div class="block">
+                
+                <label for=""> student name :</label>
+                <input type="text" placeholder="student name" class="display" required>
+            </div>
+            <div class="block">
+
+                <label for=""> email:</label>
+                <input type="email" placeholder="email" class="display" required>
+            </div>
+            <div class="block">
+                
+                <label for=""> phone number:</label>
+                <input type="tel" placeholder="phone number" class="display" required>
+            </div>
+        <div class="block">
+            
+            <label for=""> date of birth</label>
+            <input type="date" class="display" required >
+        </div>
+        <div class="block">
+            
+            <label for=""> course :</label>
+            <select class="display">
+                <option>digital marketing</option>
+                <option>web development</optionl>
+                    <option>app developement</option>
+                    <option>android developement</option>
+                    <option>SEO</option>
+                </select>
+            </div>
+            <div class="block">
+                
+                <label> qualification</label>
+                <select class="display">
+                    <option value="">10th </option>
+                    <option value=""> 12th</option>
+                    <option value=""> graduation</option>
+                    <option value="">post graduation</option>
+                </select>
+            </div>
+            
+            <div class="button">
+            <button type="submit" class="sub" value="submit"> registered </button>
+        </div>
+        
+    </form>
+</div>
+
+
+</body>
+
+</html>

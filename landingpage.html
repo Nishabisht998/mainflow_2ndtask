@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> new</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+<style>
+    * {
+        text-transform: capitalize;
+    }
+
+    /* Hide all slides by default */
+    .mySlides {
+        display: none;
+        /* margin: 100px auto; */
+        /* width: 50%; */
+    }
+
+    .pre {
+        margin: 250px 50px;
+        font-weight: bolder;
+        color: white;
+        background-color: black;
+        padding: 10px;
+    }
+
+
+    a {
+        text-decoration: none;
+        color: black;
+
+    }
+
+    a:hover {
+        border-bottom: 2px solid #31536d;
+        font-weight: bolder;
+        color: #31536d;
+        transition: 0.5s all ease-out;
+    }
+
+    header {
+        background-image: linear-gradient(270deg, rgba(66, 128, 85, 0.7), #2c4caa99), url('https://wallpaperaccess.com/full/1426870.png');
+        background-position: top;
+        background-size: cover;
+        text-transform: capitalize;
+    }
+
+    .media {
+        height: 400px;
+        background-position: center;
+        background-size: cover;
+        margin: 40px 0;
+        background-repeat: no-repeat;
+    }
+
+    .mycontainer {
+        padding: 150px;
+
+    }
+
+    .sample {
+        text-align: center;
+        margin: 50px 2px;
+
+    }
+
+    a {
+        padding: 20px;
+        margin-left: 30px;
+
+
+    }
+
+    .card-cover {
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+    }
+
+    .signup {
+        background-color: #31536d;
+        padding: 50px 100px;
+        border-radius: 5px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-weight: bolder;
+        word-spacing: 10px;
+        font-size: 60px;
+
+    }
+
+    .check {
+        margin: 20px;
+    }
+
+    .explore {
+        word-spacing: 5px;
+        margin: 10px 50px;
+        font-weight: bold;
+    }
+
+    .built {
+        margin: 30px 10px;
+        color: grey;
+    }
+
+
+    .back-photo {
+        height: 250px;
+        background-position: center;
+        background-size: cover;
+        border-radius: 5px;
+    }
+
+    .top {
+        margin: 90px 50px;
+    }
+
+    .photo {
+        height: 400px;
+    }
+
+    .photo:hover {
+        transform: scale(1.1);
+
+        transition: 0.6s all ease-in-out;
+        cursor: pointer;
+
+    }
+
+    button:hover {
+        transform: scale(1.1);
+        transition: 0.6s all ease;
+        cursor: pointer;
+
+    }
+
+    .slide-show {
+        width: 70%;
+        /* padding: 10px auto; */
+        margin: 0px 180px;
+    }
+</style>
+
+<body>
+    <header class="text-white">
+        <div class="container mycontainer">
+            <h1 class="display-1 fw-bold text-center">learning platform</h1>
+            <div class="input-group">
+                <input type="text" placeholder="search your course" class="form-control w-75 mx-auto ">
+                <button class="btn btn-secondary"><i class="fa-solid fa-magnifying-glass fa-shake"></i> </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class=" fw-bold m-4 ">
+        <a href="#">home</a>
+        <a href="#">course </a>
+        <a href="#">notes </a>
+        <a href="#">login </a>
+        <a href="form.html">form </a>
+
+    </nav>
+
+    <HR>
+    <div class="container">
+        <div class="box">
+            <div class="card-body ">
+                <div class="cont d-flex align-items-center">
+                    <div>
+                        <h2>Empower your employees to upskill with eLearning</h2>
+                        <h4> Empower your employees to upskill with eLearning</h4>
+                        <div class="d-flex p-2">
+                            <i class=" check fa-sharp fa-regular fa-circle-check fa-beat-fade fa-lg"></i>
+                            <p>Unlimited access to 22,000+ fresh courses across tech, business, leadership, and wellness
+                            </p>
+                        </div>
+                        <div class="d-flex p-2 ">
+                            <i class=" check fa-sharp fa-regular fa-circle-check fa-beat-fade fa-lg"></i>
+                            <p>Robust eLearning platform features offering on-demand, immersive, and cohort-based
+                                learning for your team</p>
+                        </div>
+                        <div class="d-flex p-2">
+                            <i class="check fa-sharp fa-regular fa-circle-check fa-beat-fade fa-lg"></i>
+                            <p>Personalized learning and actionable learner insights to drive high usage and course
+                                completion rates</p>
+                        </div>
+                    </div>
+
+                    <div class="signup w-50 ">
+                        <h2 class="text-white mx-2">signup</h2>
+                        <input type="text " class="form-control mb-2 " placeholder="name ">
+                        <input type="email " class="form-control mb-2 " placeholder="email">
+                        <input type="number " class="form-control mb-2" placeholder="phone number">
+                        <div class="text-center">
+                            <button class="btn btn-info mt-4 p-2 " type="submit"><i
+                                    class="fa-regular fa-hand-point-up fa-bounce"></i>
+                                Get in Touch</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex my-3">
+        <h1 class=" explore">explore most popular design course</h1>
+        <p class="built">built new skills with new trendy courses and shine for next future career</p>
+    </div>
+    <div class="container">
+
+
+        <div class="row ">
+            <div class="col-md-6 back-photo "
+                style="background-image: url('https://www.interviewbit.com/blog/wp-content/uploads/2022/03/Machine-Learning-Courses-2048x1000.png');">
+
+            </div>
+            <div class="col-md-6 back-photo"
+                style="background-image: url('https://www.bapugraphics.com/blog/wp-content/uploads/2016/10/graphic-design-courses.jpg');">
+
+            </div>
+        </div>
+        <div class="row ">
+
+            <div class="col-md-6 back-photo"
+                style="background-image: url('https://edynamiclearning.com/wp-content/uploads/2020/11/EDL350_Interior-Design_digital.jpg');">
+
+            </div>
+            <div class="col-md-6 back-photo"
+                style="background-image: url('https://i.ytimg.com/vi/UyoXKGQrmtY/maxresdefault.jpg');">
+
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+        <h1 class=" explore text-center mt-4">benefits you will get</h1>
+        <p class="built text-center mt-2">built new skills with new trendy courses and shine for the next future career
+        </p>
+        <div class="row">
+            <div class="col-md-6 media"
+                style="background-image: url('https://media.istockphoto.com/id/539812280/photo/happy-woman-with-laptop.jpg?s=170667a&w=0&k=20&c=Xnbinsg1VCZoTBRs1zFxQKJfKCHkUTgT8MeIkxjzDno=');">
+            </div>
+            <div class="col-md-6">
+                <div class="row ">
+                    <div class="col-md-4 mx-auto card shadow">
+                        <img class="img-fluid" alt="img11"
+                            src="https://www.pw.live/version14/assets/img/group-20356.svg">
+                        <h6>
+                            Live / Scheduled Lectures
+                        </h6>
+
+                    </div>
+                    <div class="col-md-4 mx-auto card shadow">
+                        <img class="img-fluid" alt="img11"
+                            src="https://www.pw.live/version14/assets/img/group-20360.svg" width="220" height="220">
+                        <h6>Live Doubt Solving Sessions</h6>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-4 mx-auto card shadow">
+                        <img class="img-fluid" alt="img11"
+                            src="https://www.pw.live/version14/assets/img/group-20358.svg">
+                        <h6>Structured And Targeted Study Material</h6>
+                    </div>
+                    <div class="col-md-4 mx-auto card shadow">
+                        <img class="img-fluid" alt="img11"
+                            src="https://www.pw.live/version14/assets/img/group-20359.svg">
+                        <h6>Tests On Regular Basis For Progress Tracking</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="top">
+
+                <h1 class=" explore text-center mt-4">benefits you will get</h1>
+                <p class="built text-center mt-2">built new skills with new trendy courses and shine for the next future
+                    career</p>
+                <div class="text-center">
+
+                    <button class="btn btn-dark ">Learn more</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-6">
+
+            <img class="photo "
+                src="https://t4.ftcdn.net/jpg/06/45/77/41/360_F_645774115_TuwYuUOkYgBYkWOA4LcnnJrVnhStEWxp.jpg" alt="">
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <fadeIn>
+
+                <img class="photo "
+                    src="https://djcvm26yy6fab.cloudfront.net/1625753558_elibrary_content_16cd841b-f56c-4dac-879a-a925e4139db4.jpg"
+                    alt="">
+
+            </fadeIn>
+        </div>
+        <div class="col-md-6 ">
+            <div class="top ">
+
+                <h1 class=" explore text-center mt-4">become an instructor with nuture </h1>
+                <p class="built text-center mt-2 mx-3">built new skills with new trendy courses and shine for the next
+                    future
+                    careerTeaching and nurturing theory takes time. Not all students will grasp concepts immediately, so
+                    be patient and provide additional support when needed.</p>
+                <div class="text-center">
+
+                    <button class="btn btn-dark ">Learn more</button>
+                </div>
+
+            </div>
+        </div>
+        <h2 class="sample">
+            sample letters that we provide you
+        </h2>
+        <div class="slideshow-container " style="display: flex;">
+            <div> <button class="pre" onclick="plusSlides(-1)">
+                    < </button>
+            </div>
+            <div>
+                <div class="mySlides ">
+                    <img class="slide-show"
+                        src="https://support.thecn.com/hc/article_attachments/360060125034/customized_certificate.jpg"
+                        alt="Random Image">
+                </div>
+                <div class="mySlides">
+                    <img class="slide-show"
+                        src="https://marketplace.canva.com/EAE8mhdnw_g/2/0/1131w/canva-grey-clean-cv-resume-photo-pIsBixsev8I.jpg"
+                        alt="Image 2">
+                </div>
+                <div class="mySlides">
+                    <img class="slide-show"
+                        src="https://corpseeds.blob.core.windows.net/corpseed/Appointment_Letter_Format_Corpseed.webp"
+                        alt="Image 2">
+                </div>
+            </div>
+            <div>
+                <button class="pre" onclick="plusSlides(1)">></button>
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+
+
+        <div class="bg-dark text-white">
+            <h3 class=" text-center mt-5"> start learing today</h3>
+            <div class="row mx-4">
+                <div class="col-md-6 mt-4">
+                    <h6>
+                        Contact Information:
+                    </h6>
+                    <ul style="list-style: none;">
+
+                        <li>
+
+                            Phone number
+                        </li>
+                        <li>
+
+                            Email address
+                        </li>
+                        <li>
+
+                            Contact form
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <p class="text-center">
+                        &copy;Learing Platform|| Designed by <span>LP</span>|| all rights reserved
+                    </p>
+                    <p class="text-center ">
+                        visit our website: www.<span>LP</span>.com
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
